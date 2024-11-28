@@ -1,0 +1,74 @@
+================================================================================
+Shape of dataset: (1658, 21)
+
+Removing columns that are not needed for the model...
+Shape of dataset: (1658, 14)
+
+Processing removing nan values...
+Shape of dataset: (1658, 14)
+
+Removing duplicates...
+Shape of dataset: (1648, 14)
+
+Processing outliers of data...
+Shape of dataset: (1634, 14)
+
+Separating features by type...
+numeric_features: 9
+object_features: 4
+bool_features: 1
+
+Removing features with high mutual correlation...
+Shape of dataset: (1634, 14)
+
+Splitting dataset into training, testing and validation...
+Shape of:
+X_train: (1143, 13), X_val_test: (491, 13)
+X_val: (343, 13), X_test: (148, 13)
+
+Processing features selection based on the population stability index PSI...
+Remote features: set()
+Shape of X: (1143, 13)
+
+Processing features selection by their importance...
+Remote features: {'city'}
+Shape of X: (1143, 12)
+
+Processing training model and hyperparameter selection...
+
+starting Metrics:
+Mean Absolute Error train: 11163.974763123138
+R-squared train: 0.9192803971902779
+Mean Absolute Error val: 22266.11706919028
+R-squared val: 0.7950918882509641
+Mean Absolute Error test: 26162.643118850734
+R-squared test: 0.6332663891193242
+
+Processing of saving the model...
+path: model.pkl
+
+Processing of saving the features...
+path: features_model.csv
+
+Prediction process...
+R-squared: 0.7482864802611838
+==============================================
+     price      pred       low      high price_grade
+0    80000   76345.0   61076.0   91614.0  real_price
+1    45000   80644.0   64515.2   96772.8  UNDERPRICE
+2    65000   51410.0   41128.0   61692.0   OVERPRICE
+3    70000   97234.0   77787.2  116680.8  UNDERPRICE
+4   140000   73525.0   58820.0   88230.0   OVERPRICE
+5    50000   72486.0   57988.8   86983.2  UNDERPRICE
+6   275000  325910.0  260728.0  391092.0  real_price
+7    42000   58656.0   46924.8   70387.2  UNDERPRICE
+8   140000  122403.0   97922.4  146883.6  real_price
+9    75000  104289.0   83431.2  125146.8  UNDERPRICE
+10   55000   34749.0   27799.2   41698.8   OVERPRICE
+11   85000   77532.0   62025.6   93038.4  real_price
+13   80000   86779.0   69423.2  104134.8  real_price
+14  168800  147878.0  118302.4  177453.6  real_price
+15   70000   80334.0   64267.2   96400.8  real_price
+16  105000  143833.0  115066.4  172599.6  UNDERPRICE
+17   70000   65350.0   52280.0   78420.0  real_price
+=============================================================================
