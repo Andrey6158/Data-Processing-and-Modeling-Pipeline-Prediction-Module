@@ -1,0 +1,51 @@
+Shape of dataset: (1658, 21)
+
+Removing columns that are not needed for the model...
+Shape of dataset: (1658, 14)
+
+Processing removing nan values...
+Shape of dataset: (1658, 14)
+
+Removing duplicates...
+Shape of dataset: (1648, 14)
+
+Processing outliers of data...
+Shape of dataset: (1634, 14)
+
+Separating features by type...
+numeric_features: 9
+object_features: 4
+bool_features: 1
+
+Removing features with high mutual correlation...
+Shape of dataset: (1634, 14)
+
+Splitting dataset into training, testing and validation...
+Shape of:
+X_train: (1143, 13), X_val_test: (491, 13)
+X_val: (343, 13), X_test: (148, 13)
+
+Processing features selection based on the population stability index PSI...
+Remote features: set()
+Shape of X: (1143, 13)
+
+Processing features selection by their importance...
+Remote features: {'city'}
+Shape of X: (1143, 12)
+
+Processing training model and hyperparameter selection...
+
+starting Metrics:
+Mean Absolute Error train: 11163.974763123138
+R-squared train: 0.9192803971902779
+Mean Absolute Error val: 22266.11706919028
+R-squared val: 0.7950918882509641
+Mean Absolute Error test: 26162.643118850734
+R-squared test: 0.6332663891193242
+
+Processing of saving the model...
+path: model.pkl
+
+Processing of saving the features...
+path: features_model.csv
+
